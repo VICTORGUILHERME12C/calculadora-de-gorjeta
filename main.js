@@ -36,6 +36,13 @@ function receiveTipPercentageValue(value){
 
 }
 
+
+function receiveCustomTipPercentageValue(){
+    tipPercentage = document.queryySelector("#custom-tip").valueAsNumber / 100
+
+   removeClassButtonSelected()
+}
+
 function removeClassButtonSelected(){
     if(buttonSelected !== null){
         buttonSelected.classList.remove("button-selected")
